@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+header {
+    background-color: #343a40;
+    color: #f8f9fa;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+main {
+    padding: 2.5rem;
+    max-width: 850px;
+    margin: auto;
+}
+
+section {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    border-bottom: 3px solid #343a40;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    color: #343a40;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+form input, form button {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+form input:focus {
+    border-color: #495057;
+    outline: none;
+    box-shadow: 0 0 4px rgba(73, 80, 87, 0.5);
+}
+
+form button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+#search {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+}
+
+#search:focus {
+    border-color: #495057;
+    outline: none;
+    box-shadow: 0 0 4px rgba(73, 80, 87, 0.5);
+}
+
+#book-list ul, #borrow-history ul {
+    list-style: none;
+    padding: 0;
+}
+
+#book-list li, #borrow-history li {
+    background-color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#book-list li:hover, #borrow-history li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#book-list li span, #borrow-history li span {
+    flex: 1;
+    font-size: 1rem;
+}
+
+#book-list li button, #borrow-history li button {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#book-list li button:hover, #borrow-history li button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
